@@ -1,0 +1,24 @@
+{
+  "name": "data_collector_js",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "yarn build && node dist/index.js",
+    "test": "jest",
+    "dev": "ts-node-dev --clear src/index.ts",
+    "startDev": "nodemon src/index.ts"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "puppeteer": "^19.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@types/puppeteer": "^7.0.4",
+    "nodemon": "^3.1.9",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}
